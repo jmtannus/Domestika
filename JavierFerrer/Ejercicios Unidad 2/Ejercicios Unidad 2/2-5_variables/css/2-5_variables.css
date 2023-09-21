@@ -1,16 +1,32 @@
+:root {
+  --color: #00acac;
+  --fuente1: 30px;
+  --fuente2: 60px;
+}
+
+@media (max-width: 37.5em) {
+  :root {
+    --color: #e56ada;
+    --fuente1: 20px;
+    --fuente2: 40px;
+  }
+}
+
 .cabecera {
-  background: #00acac;
+  background: var(--color);
 }
 
 .articulo__entradilla {
-  color: #00acac;
+  color: var(--color);
+  font-size: var(--fuente1);
 }
 
 .articulo__cuerpo > p:first-child::first-letter {
-  color: #00acac;
+  color: var(--color);
 }
 
 .imagen-circulo,
 .imagen-hexagono {
-  background: #00acac;
+  --color: #d58252;
+  background: var(--color);
 }
