@@ -5,6 +5,9 @@
 }
 
 .articulo__entradilla {
+  column-count: 2;
+  column-gap: 3em;
+  column-rule: thick solid rgba(0, 78, 146, 0.05);
   margin-bottom: 3em;
   font-weight: 600;
   font-size: 115%;
