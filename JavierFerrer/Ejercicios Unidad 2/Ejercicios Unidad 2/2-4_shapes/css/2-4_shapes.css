@@ -1,0 +1,41 @@
+/*
+  Polígono que he usado: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+  (También puedes probar otras formas…)
+*/
+
+.imagen-circulo {
+  /* border-radius: 50%; */
+  max-width: 25em;
+  float: right;
+  margin-right: -10em;
+  background: #004e92;
+}
+
+.imagen-circulo img {
+  display: block;
+  /* border-radius: 50%; */
+  mix-blend-mode: hard-light;
+}
+
+.imagen-hexagono {
+  max-width: 25em;
+  float: left;
+  background: #004e92;
+  margin-left: -10em;
+  margin-right: 1em;
+}
+
+.imagen-hexagono img {
+  display: block;
+  mix-blend-mode: hard-light;
+}
+
+@media (max-width: 37.5em) {
+  .imagen-circulo {
+    margin: 1em;
+  }
+
+  .imagen-hexagono {
+    margin: 1em;
+  }
+}

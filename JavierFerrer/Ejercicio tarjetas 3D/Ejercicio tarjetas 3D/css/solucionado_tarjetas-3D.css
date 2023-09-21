@@ -1,0 +1,33 @@
+.contenedor{
+  perspective: 2000px;
+}
+
+.explorador{
+  position: relative;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  width: 500px;
+  height: 500px;
+  cursor: pointer;
+}
+
+.explorador.descubierto{
+  transform: rotateY(180deg);
+}
+
+.explorador__imagen{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.explorador__contenido{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(250, 250, 250);
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+
+}

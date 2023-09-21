@@ -1,0 +1,42 @@
+.articulo {
+  max-width: 54em;
+  margin: 5em auto;
+  padding: 0 3em;
+}
+
+.articulo__entradilla {
+  margin-bottom: 3em;
+  font-weight: 600;
+  font-size: 115%;
+  line-height: 1.7;
+  color: #004e92;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.articulo__entradilla > p {
+  margin-bottom: 0;
+}
+
+.articulo__cuerpo {
+  max-width: 34em;
+  margin: auto;
+}
+.articulo__cuerpo > p:first-child::first-letter {
+  color: #004e92;
+  font-size: 12rem;
+  line-height: 0.75;
+  float: left;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 37.5em) {
+  .articulo {
+    padding: 0 2em;
+  }
+  .articulo__entradilla {
+    font-size: 100%;
+    text-align: left;
+  }
+}

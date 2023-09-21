@@ -1,0 +1,16 @@
+.cabecera {
+  background: #00acac;
+}
+
+.articulo__entradilla {
+  color: #00acac;
+}
+
+.articulo__cuerpo > p:first-child::first-letter {
+  color: #00acac;
+}
+
+.imagen-circulo,
+.imagen-hexagono {
+  background: #00acac;
+}

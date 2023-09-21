@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(38deg, #000428, #004e92);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #fafafa;
+  color: #004e92;
+  font-size: 80%;
+  font-style: italic;
+  padding: 0.5em 2em;
+}
+
+.explorador {
+  background-color: rgba(250, 250, 250, 0.8);
+  margin: 1em;
+  padding: 2em;
+  border-radius: 10px;
+  text-align: center;
+  color: #004e92;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1.4;
+}

@@ -1,0 +1,49 @@
+:root{
+  --opacidad-nav: 0;
+  --titular-pos: 0;
+  --imagen1: 0;
+  --imagen2: 0;
+  --cita: 50%;
+  --cita-opacidad: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+:root{
+  --titular-pos: 0 !important;
+  --imagen1: -30% !important;
+  --imagen2: -30% !important;
+  --cita: 0 !important;
+  --cita-opacidad: 1 !important;
+  }
+}
+
+.navegacion {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: var(--opacidad-nav);
+}
+
+.cabecera__titulo{
+  overflow: hidden;
+}
+
+.cabecera__titulo h1{
+  transform: translateY(var(--titular-pos));
+}
+
+.imagen-1 img{
+  transform: translateY(var(--imagen1));
+}
+
+.imagen-2 img{
+  transform: translateY(var(--imagen2));
+}
+
+
+.cita{
+  transform: translateX(var(--cita));
+  opacity: var(--cita-opacidad);
+}
