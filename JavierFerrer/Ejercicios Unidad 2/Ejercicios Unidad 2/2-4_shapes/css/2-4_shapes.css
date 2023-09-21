@@ -1,19 +1,16 @@
-/*
-  Polígono que he usado: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
-  (También puedes probar otras formas…)
-*/
-
 .imagen-circulo {
-  /* border-radius: 50%; */
+  border-radius: 50%;
   max-width: 25em;
   float: right;
   margin-right: -10em;
   background: #004e92;
+  shape-outside: circle(50%) border-box;
+  shape-margin: 1em;
 }
 
 .imagen-circulo img {
   display: block;
-  /* border-radius: 50%; */
+  border-radius: 50%;  
   mix-blend-mode: hard-light;
 }
 
@@ -23,16 +20,22 @@
   background: #004e92;
   margin-left: -10em;
   margin-right: 1em;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+    border-box;
+  shape-margin: 1em;
 }
 
 .imagen-hexagono img {
   display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   mix-blend-mode: hard-light;
 }
 
 @media (max-width: 37.5em) {
   .imagen-circulo {
     margin: 1em;
+    shape-outside: unset;
   }
 
   .imagen-hexagono {
