@@ -1,5 +1,13 @@
 .contenedor {
   padding: 4em 2em;
+  display: flex; 
+  flex-wrap: wrap; //pode-se usar nomrap ou wrap-reverse
+  border: 2x solid white;
+  flex-direction: row; //se quiser reverso, chama row-reverse
+  //flex-direction: column ou column-reverse;
+ //min-height: 100vh;
+ //justify-content: center;
+
 }
 
 .explorador {

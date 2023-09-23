@@ -40,5 +40,6 @@
 
   .imagen-hexagono {
     margin: 1em;
+    shape-outside: unset;
   }
 }
