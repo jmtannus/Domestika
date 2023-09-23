@@ -1,14 +1,16 @@
 .contenedor {
-  padding: 4em 2em;
+  padding: 0em 0em;
   display: flex; 
-  border: 2px solid #000;
-  justify-content: space-between; // ou space-around, flex-end, flex-start , center. Alinha no eixo principal.
-  align-items: stretch; //ou flex-end, ou flex-start ou center, ou baseline; Alinha no eixo transversal.
+  border: 2px solid white;
+  height: 100vh;
+  align-content: space-around;
+  align-items: flex-start; //ou flex-end, ou flex-start ou center, ou baseline; Alinha no eixo transversal;
+  flex-wrap: wrap; //pode-se usar nomrap ou wrap-reverse;
+  //justify-content: space-between; // ou space-around, flex-end, flex-start , center. Alinha no eixo principal.
+
   //flex-direction: row;  //se quiser reverso, chama row-reverse;
   //flex-direction: column ou column-reverse;
   //min-height: 100vh;
-  //flex-wrap: wrap; //pode-se usar nomrap ou wrap-reverse;
- //justify-content: center;
 }
 
 .explorador {
@@ -23,17 +25,27 @@
   font-style: italic;
   font-size: 1em;
   line-height: 1.4;
-  order: 0; //altera a ordem de um elemento concreto dentro de um espaço flex
-  flex-bases: 200px;
+
+  //order: 0; //altera a ordem de um elemento concreto dentro de um espaço flex
+  //flex-bases: 200px;
   //flex-shrink: 1; //reduz quando não tem espaço suficiente, baseados em um).flex-shrink:0 nunca vai reduzir
   //flex-grow: 1; //crescem proporcionalmente, todos iguais
+}
+
+.exp1 {
+  //align-self: stretch;
 }
 .exp2 {
   //flex-grow: 1; //cresce sozinho enquanto expande tamanho do container (proporção)
   //flex-shrink: 0; 
  // order: 2; 
 }
-.exp4 {
+.exp3 {
+ //align-self: flex-end;
+}
+.exp4 { 
+  margin-left: auto;
+  margin-righr: auto;
   //flex-grow: 2; //cresce sozinho, o dobro de pixels do exp2, os outros não crescem, ajustar ao tamanho do container.
   //flex-bases: 200px ; //tenta ajustar ao tamanho do container dentro do eixo principal.
   //order: 1; 
