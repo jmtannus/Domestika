@@ -3,7 +3,7 @@
   display: flex; 
   flex-wrap: wrap; //pode-se usar nomrap ou wrap-reverse
   border: 2x solid white;
-  flex-direction: row; //se quiser reverso, chama row-reverse
+  flex-direction: column; //se quiser reverso, chama row-reverse
   //flex-direction: column ou column-reverse;
  //min-height: 100vh;
  //justify-content: center;
@@ -11,9 +11,10 @@
 }
 
 .explorador {
+  box-sizing: border box;
   background-color: rgba(250, 250, 250, 0.8);
-  margin: 1em;
-  padding: 2em;
+  margin: 0.5em;
+  padding: 1em;
   border-radius: 10px;
   text-align: center;
   color: #004e92;
@@ -21,6 +22,20 @@
   font-style: italic;
   font-size: 1.2em;
   line-height: 1.4;
+  order: 0; //altera a ordem de um elemento concreto dentro de um espaço flex
+  flex-bases: 200px;
+  //flex-shrink: 1; //reduz quando não tem espaço suficiente, baseados em um).flex-shrink:0 nunca vai reduzir
+  //flex-grow: 1; //crescem proporcionalmente, todos iguais
+}
+.exp2 {
+  //flex-grow: 1; //cresce sozinho enquanto expande tamanho do container (proporção)
+  //flex-shrink: 0; 
+ // order: 2; 
+}
+.exp4 {
+  //flex-grow: 2; //cresce sozinho, o dobro de pixels do exp2, os outros não crescem, ajustar ao tamanho do container.
+  //flex-bases: 200px ; //tenta ajustar ao tamanho do container dentro do eixo principal.
+  //order: 1; 
 }
 
 body {
