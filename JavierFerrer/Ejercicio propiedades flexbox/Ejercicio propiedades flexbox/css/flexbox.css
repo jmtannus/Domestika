@@ -1,13 +1,14 @@
 .contenedor {
   padding: 4em 2em;
   display: flex; 
-  flex-wrap: wrap; //pode-se usar nomrap ou wrap-reverse
-  border: 2x solid white;
-  flex-direction: column; //se quiser reverso, chama row-reverse
+  border: 2px solid #000;
+  justify-content: space-between; // ou space-around, flex-end, flex-start , center. Alinha no eixo principal.
+  align-items: stretch; //ou flex-end, ou flex-start ou center, ou baseline; Alinha no eixo transversal.
+  //flex-direction: row;  //se quiser reverso, chama row-reverse;
   //flex-direction: column ou column-reverse;
- //min-height: 100vh;
+  //min-height: 100vh;
+  //flex-wrap: wrap; //pode-se usar nomrap ou wrap-reverse;
  //justify-content: center;
-
 }
 
 .explorador {
@@ -20,7 +21,7 @@
   color: #004e92;
   font-weight: 600;
   font-style: italic;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.4;
   order: 0; //altera a ordem de um elemento concreto dentro de um espaço flex
   flex-bases: 200px;
