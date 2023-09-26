@@ -1,2 +1,9 @@
 # Domestika
-atividades de Javier Ferrer (https://www.domestika.org/pt/courses/389-layout-web-com-css-grid-flexbox-e-outras-tecnicas-modernas)
+<!--
+'___  __  __ ___ _____ _  __
+|   \|  \/  / __|_   _| |/ /
+| |) | |\/| \__ \ | | | ' <
+|___/|_|  |_|___/ |_| |_|\_\
+'
+Crea, comparte y aprende.
+-->
