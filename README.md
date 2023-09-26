@@ -6,4 +6,3 @@
 |___/|_|  |_|___/ |_| |_|\_\
 '
 Crea, comparte y aprende.
-
